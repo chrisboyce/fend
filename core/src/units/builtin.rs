@@ -361,7 +361,6 @@ const COMMON_SI_DERIVED_UNITS: &[UnitTuple] = &[
 	("rem", "", "l@1/100 Sv", ""),
 	("roentgen", "roentgens", "l@0.000258 coulomb/kg", ""),
 	("R", "", "s@roentgen", ""),
-	("p_r", "p_rs", "log10 db", ""),
 ];
 
 const TIME_UNITS: &[UnitTuple] = &[
@@ -437,8 +436,7 @@ const RATIOS: &[UnitTuple] = &[
 	("%", "", "=percent", ""),
 	("bel", "bels", "0.5 * ln(10) neper", ""),
 	// f64::log10(db)
-	//("p_r", "p_rs", "log10 db", ""),
-	//("db", "dbs", "10^p_r", ""),
+	("p_r", "p_rs", "log10 db", ""),
 	("decibel", "decibels", "1/10 bel", ""),
 	("dB", "", "decibel", ""),
 	("mill", "mills", "0.001", ""),

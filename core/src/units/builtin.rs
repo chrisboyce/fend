@@ -436,8 +436,7 @@ const RATIOS: &[UnitTuple] = &[
 	("%", "", "=percent", ""),
 	("bel", "bels", "0.5 * ln(10) neper", ""),
 	// f64::log10(db)
-	//("p_r", "p_rs", "2 db", ""),
-	("p_r", "p_rs", "ln(p_r)/ln(10) db", ""),
+	("p_r", "p_rs", "2 db", ""),
 	("decibel", "decibels", "1/10 bel", ""),
 	("dB", "", "decibel", ""),
 	("mill", "mills", "0.001", ""),
